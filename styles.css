@@ -21,8 +21,8 @@ h1 {
     font-size: 10vw;
     font-weight: 100;
     text-align: center;
-    margin: calc(8vw + 24px) 0 0 0;
-    vertical-align: bottom;
+    margin: calc(1vw + 52px) 0 0 0;
+    vertical-align: top;
 }
 
 h2 {
@@ -47,11 +47,11 @@ h3 {
     overflow: hidden;
     top: 0;
     width: 100%;
-    min-width: 450px;
+    min-width: 400px;
     background-color: #454e5c;
     margin: 0 auto;
     padding: 0;
-    font-size: 0.9em;
+    font-size: 0.95em;
 }
 
 ul {
@@ -71,14 +71,14 @@ li a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 470px) {
     li {
         display: inline-block;
         padding: 0;
     }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 470px) {
     li {
         display: inline-block;
         padding: 0 6px;
