@@ -15,12 +15,24 @@ html {
     scroll-behavior: smooth;
 }
 
-h1 {
-    color: #fff;
-    font-size: 6em;
-    font-weight: 100;
-    text-align: center;
-    margin-bottom: 0;
+@media screen and (max-width: 560px) {
+    h1 {
+        color: #fff;
+        font-size: 4em;
+        font-weight: 100;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 561px) {
+    h1 {
+        color: #fff;
+        font-size: 6em;
+        font-weight: 100;
+        text-align: center;
+        margin-bottom: 0;
+    }
 }
 
 h2 {
@@ -33,14 +45,18 @@ h2 {
 
 h3 {
     color: #e2fcff;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 600;
     text-align: left;
-    margin: 12px 0;
+    margin: 120px 0 24px 0;
     text-align: center;
 }
 
 .navigation {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
     background-color: #454e5c;
     margin: 0 auto;
     padding: 0;
@@ -58,9 +74,6 @@ ul {
 li {
     display: inline-block;
     margin: 0;
-    /* font-weight: 200;
-    color: #e2fcff;
-    padding: 6px 12px; */
 }
 
 li a {
@@ -80,8 +93,10 @@ li a:hover {
 
 .section-contents {
     color: #fff;
-    font-weight: 100;
+    font-weight: 200;
+    line-height: 160%;
     font-size: 1.2em;
-    width: 70%;
+    width: 60%;
+    max-width: 800px;
     margin: auto;
 }
