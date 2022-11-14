@@ -11,33 +11,23 @@ body {
 html {
     background-color: #2c3645;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 560px) {
-    h1 {
-        color: #fff;
-        font-size: 4em;
-        font-weight: 100;
-        text-align: center;
-        margin-bottom: 0;
-    }
-}
-
-@media screen and (min-width: 561px) {
-    h1 {
-        color: #fff;
-        font-size: 6em;
-        font-weight: 100;
-        text-align: center;
-        margin-bottom: 0;
-    }
+h1 {
+    top: 100px;
+    color: #fff;
+    font-size: 10vw;
+    font-weight: 100;
+    text-align: center;
+    margin: calc(8vw + 24px) 0 0 0;
+    vertical-align: bottom;
 }
 
 h2 {
     color: #ffffd4;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     text-align: center;
     margin: 0 0 25px 0;
@@ -48,7 +38,7 @@ h3 {
     font-size: 1.4em;
     font-weight: 600;
     text-align: left;
-    margin: 120px 0 24px 0;
+    margin: 40px 0;
     text-align: center;
 }
 
@@ -57,10 +47,11 @@ h3 {
     overflow: hidden;
     top: 0;
     width: 100%;
+    min-width: 450px;
     background-color: #454e5c;
     margin: 0 auto;
     padding: 0;
-    font-size: 1.1em;
+    font-size: 0.9em;
 }
 
 ul {
@@ -71,20 +62,27 @@ ul {
     margin: 0;
 }
 
-li {
-    display: inline-block;
-    margin: 0;
-}
-
 li a {
     display: inline-block;
     font-weight: 200;
     color: #e2fcff;
-    padding: 8px 0 4px 0;
     margin: 0;
     padding: 16px 0 7px 0;
-    min-width: 120px;
     text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+    li {
+        display: inline-block;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    li {
+        display: inline-block;
+        padding: 0 6px;
+    }
 }
 
 li a:hover {
@@ -96,7 +94,7 @@ li a:hover {
     font-weight: 200;
     line-height: 160%;
     font-size: 1.2em;
-    width: 60%;
+    width: 70%;
     max-width: 800px;
     margin: auto;
 }
