@@ -153,9 +153,25 @@ li a:hover {
 
 #code {
     font-family: monospace;
-    font-size: 1.1em;
+    font-size: 0.9em;
     text-align: left;
     letter-spacing: 0.1em;
     background-color: #000;
     color: #ddd;
+}
+
+#cursor {
+    border-right: .15em solid #ddd;
+    white-space: nowrap;
+    animation: blink-cursor .75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #ddd;
+    }
 }

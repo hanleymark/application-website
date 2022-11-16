@@ -1,18 +1,20 @@
 const typeText = document.querySelector("#code");
+const typeTextContent = typeText.textContent;
 
 function animateCode() {
-    let id = null;
-    const elem = document.getElementById("animate");   
-    let pos = 0;
-    clearInterval(id);
-    id = setInterval(frame, 5);
+    let timer = null;
+
+    let pos = 1;
+    clearInterval(timer);
+    timer = setInterval(frame, 140);
+
     function frame() {
-      if (pos == 350) {
-        clearInterval(id);
-      } else {
-        pos++; 
-        elem.style.top = pos + "px"; 
-        elem.style.left = pos + "px"; 
-      }
+        if (pos <= typeTextContent.length) {
+            typeText.innerHTML = typeTextContent.substring(0, pos) + '<span id="cursor"></span>';
+            pos++;
+        }
+        else {
+            clearInterval(timer);
+        }
     }
-  }
+}
