@@ -1,5 +1,6 @@
 const typeText = document.querySelector("#code");
 const typeTextContent = typeText.textContent;
+typeText.textContent = " ";
 
 function animateCode() {
     let timer = null;
