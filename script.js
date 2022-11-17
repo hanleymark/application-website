@@ -1,6 +1,6 @@
-// Get references to all 'typing code' style  animated banners
+// Get references to all 'typing code' style animated banners
 const typingTextElements = document.querySelectorAll(".code");
-// Set up arrays to keep track of contents, interval timers and character iterators in the banners
+// Declare global parallel arrays to keep track of contents, interval timers and character iterators in the banners
 let typingTextContents = [];
 let typingTextTimers = [];
 let typingTextIterators = [];
@@ -20,7 +20,7 @@ window.addEventListener('scroll', function (event) {
 // Check if typing animation has been started, if not start it
 function animateTyping(index) {
     if (typingTextTimers[index] == null) {
-        typingTextTimers[index] = setInterval(frame, 140);
+        typingTextTimers[index] = setInterval(frame, 100);
     }
     // Iterate through each letter of the typing animation using its iterator
     function frame() {
