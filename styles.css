@@ -207,24 +207,15 @@ figcaption {
 .portfolio-card {
     border-radius: 8px;
     box-shadow: 10px 10px 16px 0 rgba(0, 0, 0, 0.1), 10px 10px 20px 0 rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
     padding: 0;
     margin: 1em;
     flex: 1;
-    min-width: 200px;
-    max-width: 400px;
-
-    &:hover {
-        .card__image {
-            filter: contrast(100%);
-        }
-    }
+    width: 390px;
 }
 
 .portfolio-text {
-    background-color: #ddd;
+    background-color: #fff;
     color: #000;
     padding: 12px 15px;
 }
@@ -232,3 +223,59 @@ figcaption {
 .portfolio-image {
     width: 100%;
 }
+
+.mini-window {
+    border: 3px solid #e0dfdf;
+    border-radius: 6px;
+  }
+  
+  .row {
+    padding: 3px 3px;
+    background-color: #e0dfdf;
+    line-height: 100%;
+    border-bottom: solid 3px #cfcfcf;
+  }
+
+  .window-title {
+    height: 1rem;
+    margin: 4px 0;
+  }
+  
+  .column {
+    float: left;
+  }
+  
+  .left {
+    width: 15%;
+  }
+  
+  .right {
+    width: 75%;
+    text-align: center;
+    color: #2c3645;
+    font-size: 0.8rem;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .dot {
+    margin-top: 4px;
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+    
+  .content {
+    padding: 10px;
+    background-color: #999;
+    border-radius: 6px 6px 0 0;
+  }
