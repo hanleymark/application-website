@@ -55,3 +55,8 @@ function setUpTypingAnimation(elements) {
         element.innerText = "";
     });
 }
+
+function showText(element) {
+    console.log("PRESSED!");
+    
+}
