@@ -199,9 +199,11 @@ figcaption {
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
-    margin: -1rem;
+    margin: 0;
     padding: 0;
     flex-direction: row;
+    justify-content:space-evenly;
+    justify-items: center;
 }
 
 .portfolio-text, .section-contents ul {
@@ -236,7 +238,8 @@ figcaption {
     overflow: hidden;
     padding: 0;
     margin: 1rem;
-    max-width: 320px;
+    min-width: 320px;
+    max-width: 420px;
     /* width: 320px; */
     @media(min-width: 40rem) {
         width: 50%;
@@ -306,15 +309,4 @@ figcaption {
 .portfolio-content {
     background-color: #bbb;
     border-radius: 0 0 6px 6px;
-}
-
-/* Full width CSS breakout class adapted from: https://gomakethings.com/how-to-break-an-image-out-of-its-parent-container-with-css/ */
-.full-width {
-    left: 50%;
-    margin-left: -45vw;
-    margin-right: -45vw;
-    max-width: 90vw;
-    position: relative;
-    right: 45%;
-    width: 90vw;
 }
