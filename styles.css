@@ -1,6 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap');
 
 * {
     box-sizing: border-box;
@@ -203,11 +201,11 @@ figcaption {
     flex-wrap: wrap;
     margin: -1rem;
     padding: 0;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .portfolio-text, .section-contents ul {
-    font-family: 'VT323' monospace;
+    font-family: inherit;
     background-color: #fff;
     color: #000;
     padding: 12px 15px;
@@ -227,7 +225,7 @@ figcaption {
     border-style: solid;
     border-width: 2px;
     border: 2px 2px 0 2px;
-    
+
 }
 
 .portfolio-window {
@@ -238,43 +236,49 @@ figcaption {
     overflow: hidden;
     padding: 0;
     margin: 1rem;
-    flex: 1;
-    width: 390px;
-  }
+    max-width: 320px;
+    /* width: 320px; */
+    @media(min-width: 40rem) {
+        width: 50%;
+      }
+      @media(min-width: 56rem) {
+        width: 33.3333%;
+      }
+}
 
-  .portfolio-text-title {
-    margin:0;
+.portfolio-text-title {
+    margin: 0;
     padding: 0;
     display: inline-block;
-  }
+}
 
-  .portfolio-button {
+.portfolio-button {
     display: inline-block;
     text-align: right;
-    
-  }
-  
-  .row {
+
+}
+
+.row {
     padding: 3px 3px;
     background-color: #e0dfdf;
     line-height: 100%;
     border-bottom: solid px #cfcfcf;
-  }
+}
 
-  .section-contents.window-title {
+.section-contents.window-title {
     height: 1rem;
     margin: 6px 0;
-  }
-  
-  .column {
+}
+
+.column {
     float: left;
-  }
-  
-  .left {
+}
+
+.left {
     width: 15%;
-  }
-  
-  .right {
+}
+
+.right {
     width: 75%;
     text-align: center;
     color: #2c3645;
@@ -282,24 +286,35 @@ figcaption {
     background-color: #fff;
     padding: 4px 0 0 0;
     margin: 0 8px 5px 8px;
-  }
-  
-  .row:after {
+}
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  .dot {
+}
+
+.dot {
     margin-top: 4px;
-    height: 14px;
-    width: 14px;
+    height: 10px;
+    width: 10px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-  }
-    
-  .portfolio-content {
+}
+
+.portfolio-content {
     background-color: #bbb;
     border-radius: 0 0 6px 6px;
-  }
+}
+
+/* Full width CSS breakout class adapted from: https://gomakethings.com/how-to-break-an-image-out-of-its-parent-container-with-css/ */
+.full-width {
+    left: 50%;
+    margin-left: -45vw;
+    margin-right: -45vw;
+    max-width: 90vw;
+    position: relative;
+    right: 45%;
+    width: 90vw;
+}
