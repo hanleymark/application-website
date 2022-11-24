@@ -56,7 +56,15 @@ function setUpTypingAnimation(elements) {
     });
 }
 
-function showText(element) {
-    console.log("PRESSED!");
-    
+// Toggle show/hide extra information on portfolio windows
+function toggleText(name, button) {
+    const content = document.querySelector(`#${name}-hidden`);
+    if (content.style.display == "none") {
+        content.style.display = "block";
+        button.innerHTML = "Less";
+    }
+    else {
+        content.style.display = "none";
+        button.innerHTML = "More";
+    }
 }

@@ -215,21 +215,35 @@
                     <img class="portfolio-image" src="./images/portfolio-tribute-page.png"
                         alt="Tribute project thumbnail image">
                     <div class="portfolio-text">
-                        <h4 class="portfolio-text-title">Tribute page project&nbsp</h4><button
-                            onclick="showText('tribute')" class="portfolio-button">More</button>
+
+
+
+                        <div class="row-mini-window">
+                            <div class="column left-mini-window">
+                                <h4 class="portfolio-text-title">Tribute page project&nbsp</h4>
+                            </div>
+                            <div class="column right-mini-window">
+                                <button onclick="toggleText('tribute', this)" class="portfolio-button">More</button>
+                            </div>
+                        </div>
+
+
+
+
+
+
                         <div id="tribute-hidden" style="display: none;">
                             <p>This was my beginning in web development! A simple single-page project about
-                                the
-                                musician Nick Drake.</p>
+                                the musician Nick Drake.</p>
                             <p>Key learning:</p>
-                            <ul>
+                            <ul class="portfolio-list">
                                 <li>Basic HTML including semantic elements</li>
                                 <li>Simple JavaScript to manipulate page elements dynamically</li>
                                 <li>First steps in CSS</li>
                             </ul>
                             <p>Next steps:</p>
-                            <ul>
-                                <li>Make it prettier</li>
+                            <ul class="portfolio-list">
+                                <li>Make it prettier!</li>
                                 <li>Size flex items consistently</li>
                             </ul>
                         </div>
@@ -313,6 +327,25 @@
                 </div>
                 <div class="portfolio-text">
                     <h4 class="portfolio-text-title">Javascript game project</h4>
+                </div>
+            </div>
+            <div class="portfolio-window">
+                <div class="row">
+                    <div class="column left">
+                        <span class="dot" style="background:#ff4b37;"></span>
+                        <span class="dot" style="background:#fae04b;"></span>
+                        <span class="dot" style="background:#6be06b;"></span>
+                    </div>
+                    <div class="column right">
+                        <span class="window-title"><strong>APPLICATION SITE PROJECT</strong></span>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <img class="portfolio-image" src="./images/portfolio-application.png"
+                        alt="Javascript game project thumbnail image">
+                </div>
+                <div class="portfolio-text">
+                    <h4 class="portfolio-text-title">Application site project</h4>
                 </div>
             </div>
         </div>
