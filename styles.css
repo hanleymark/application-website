@@ -267,6 +267,7 @@ figcaption {
 
 .portfolio-button {
     display: inline-block;
+    text-decoration: none;
     text-align: right;
     font-family: inherit;
     font-size: 0.9rem;

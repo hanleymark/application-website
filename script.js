@@ -38,12 +38,15 @@ function animateTyping(index) {
 // Function checks if supplied element parameter is in the current viewport
 function isInViewPort(element) {
     var elementRectangle = element.getBoundingClientRect();
-    return (
-        elementRectangle.top >= 0 &&
-        elementRectangle.left >= 0 &&
-        elementRectangle.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        elementRectangle.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+
+    if (elementRectangle.top >= 0 &&
+        elementRectangle.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+        {
+            return true;
+        }
+    else {
+        return false;
+    }
 };
 
 // Initialise typing banners

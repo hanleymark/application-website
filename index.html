@@ -215,23 +215,14 @@
                     <img class="portfolio-image" src="./images/portfolio-tribute-page.png"
                         alt="Tribute project thumbnail image">
                     <div class="portfolio-text">
-
-
-
                         <div class="row-mini-window">
                             <div class="column left-mini-window">
-                                <h4 class="portfolio-text-title">Tribute page project&nbsp</h4>
+                                <h4 class="portfolio-text-title">Tribute page project</h4>
                             </div>
                             <div class="column right-mini-window">
                                 <button onclick="toggleText('tribute', this)" class="portfolio-button">More</button>
                             </div>
                         </div>
-
-
-
-
-
-
                         <div id="tribute-hidden" style="display: none;">
                             <p>This was my beginning in web development! A simple single-page project about
                                 the musician Nick Drake.</p>
@@ -258,7 +249,7 @@
                         <span class="dot" style="background:#6be06b;"></span>
                     </div>
                     <div class="column right">
-                        <span class="window-title"><strong>PORTFOLIO PROJECT</strong></span>
+                        <span class="window-title"><strong>GALLERY PROJECT</strong></span>
                     </div>
                 </div>
 
@@ -266,7 +257,29 @@
                     <img class="portfolio-image" src="./images/portfolio-portfolio.png"
                         alt="Portfolio project thumbnail image">
                     <div class="portfolio-text">
-                        <h4 class="portfolio-text-title">Portfolio project</h4>
+                        <div class="row-mini-window">
+                            <div class="column left-mini-window">
+                                <h4 class="portfolio-text-title">Gallery project</h4>
+                            </div>
+                            <div class="column right-mini-window">
+                                <button onclick="toggleText('gallery', this)" class="portfolio-button">More</button>
+                            </div>
+                        </div>
+                        <div id="gallery-hidden" style="display: none;">
+                            <p>This project involved developing a card layout using flexbox. It also provided
+                                an opportunity to tinker with the DOM.</p>
+                            <p>Key learning:</p>
+                            <ul class="portfolio-list">
+                                <li>Responsive layout using flexbox</li>
+                                <li>DOM manipulation to show/hide elements</li>
+                                <li>Using CSS pseudo classes</li>
+                            </ul>
+                            <p>Next steps:</p>
+                            <ul class="portfolio-list">
+                                <li>Make it prettier!</li>
+                                <li>Consistently size cards</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -286,7 +299,31 @@
                     <img class="portfolio-image" src="./images/portfolio-comment-box.png"
                         alt="Comment box project thumbnail image">
                     <div class="portfolio-text">
-                        <h4 class="portfolio-text-title">Comment box project</h4>
+                        <div class="row-mini-window">
+                            <div class="column left-mini-window">
+                                <h4 class="portfolio-text-title">Comment box project</h4>
+                            </div>
+                            <div class="column right-mini-window">
+                                <button onclick="toggleText('comment', this)" class="portfolio-button">More</button>
+                            </div>
+                        </div>
+                        <div id="comment-hidden" style="display: none;">
+                            <p>This was my first attempt at serious form input. The project involved taking user input,
+                                validating it and then displaying validated content on the page. It also involved
+                                dynamically updating the
+                                user on the current status of some input fields.</p>
+                            <p>Key learning:</p>
+                            <ul class="portfolio-list">
+                                <li>Adding elements to the page dynamically</li>
+                                <li>Form validation</li>
+                                <li>Custom form validation error reporting</li>
+                            </ul>
+                            <p>Next steps:</p>
+                            <ul class="portfolio-list">
+                                <li>Make it prettier!</li>
+                                <li>Add ARIA tags to form to improve accessibility</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -306,7 +343,37 @@
                     <img class="portfolio-image" src="./images/portfolio-movie-data.png"
                         alt="Movie data project thumbnail image">
                     <div class="portfolio-text">
-                        <h4 class="portfolio-text-title">Movie data project</h4>
+                        <div class="row-mini-window">
+                            <div class="column left-mini-window">
+                                <h4 class="portfolio-text-title">Movie data project</h4>
+                            </div>
+                            <div class="column right-mini-window">
+                                <button onclick="toggleText('movie', this)" class="portfolio-button">More</button>
+                            </div>
+                        </div>
+                        <div id="movie-hidden" style="display: none;">
+                            <p>This felt like a much bigger project which provided a much greater challenge. The brief
+                                left lots of room for interpretation which enabled me to choose where to focus my
+                                learning. I decided to attempt much more ambitious CSS in order to develop a clear page
+                                style.
+                            </p>
+                            <p>Key learning:</p>
+                            <ul class="portfolio-list">
+                                <li>More complex CSS styling</li>
+                                <li>Using tables to layout dynamic information</li>
+                                <li>More pseudo classes</li>
+                                <li>Modal windows in CSS</li>
+                                <li>More form validation</li>
+                                <li>Dynamically show/hide content for smaller viewports</li>
+                                <li>Add interactivity with edit/add record functionality</li>
+                                <li>Use of Google Fonts API</li>
+                            </ul>
+                            <p>Next steps:</p>
+                            <ul class="portfolio-list">
+                                <li>Add ARIA tags to improve accessibility</li>
+                                <li>Refine modal window layout on smaller devices</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -326,7 +393,39 @@
                         alt="Javascript game project thumbnail image">
                 </div>
                 <div class="portfolio-text">
-                    <h4 class="portfolio-text-title">Javascript game project</h4>
+                    <div class="row-mini-window">
+                        <div class="column left-mini-window">
+                            <h4 class="portfolio-text-title">Javascript game project</h4>
+                        </div>
+                        <div class="column right-mini-window">
+                            <button onclick="toggleText('game', this)" class="portfolio-button">More</button>
+                        </div>
+                    </div>
+                    <div id="game-hidden" style="display: none;">
+                        <p>This was my favourite project! An almost pure JavaScript game with very little HTML/CSS.</p>
+                        <p>I decided to have a go at creating a clone of the fiendishly difficult but addictive 2048
+                            game. The game involves using the arrow keys to slide blocks, each with a number on, across
+                            a grid. When two blocks of
+                            the same value are slid into each other, they combine and their value doubles. Each time the
+                            blocks move, a randomly generated block with a 2 or 4 value is placed in a free grid space.
+                            The game is over when no more new blocks can be placed and no slides are possible. I loved
+                            the
+                            constant problem solving that this project brought and the challenge of developing the
+                            gameplay
+                            algorithms.</p>
+                        <p>Key learning:</p>
+                        <ul class="portfolio-list">
+                            <li>LOTS of JavaScript!</li>
+                            <li>WCAG compliant contrasting colour combinations</li>
+                            <li>HTML canvas drawing</li>
+                            <li>Capturing and handling keyboard input</li>
+                        </ul>
+                        <p>Next steps:</p>
+                        <ul class="portfolio-list">
+                            <li>Animate the block slides smoothly using CSS delta T animations</li>
+                            <li>Add game controls for touch devices (game is not playable without a keyboard)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-window">
@@ -345,7 +444,31 @@
                         alt="Javascript game project thumbnail image">
                 </div>
                 <div class="portfolio-text">
-                    <h4 class="portfolio-text-title">Application site project</h4>
+                    <div class="row-mini-window">
+                        <div class="column left-mini-window">
+                            <h4 class="portfolio-text-title">Application site project</h4>
+                        </div>
+                        <div class="column right-mini-window">
+                            <button onclick="toggleText('application', this)" class="portfolio-button">More</button>
+                        </div>
+                    </div>
+                    <div id="application-hidden" style="display: none;">
+                        <p>The last project! I wanted to develop a pleasing style and layout which showed many of the
+                            reasons why I want to join the wonderful F&C Bootcamp programme.</p>
+                        <p>Key learning:</p>
+                        <ul class="portfolio-list">
+                            <li>Using anchors for navigation</li>
+                            <li>Fixed navigation links at the top of the page</li>
+                            <li>Play CSS animations when the user scrolls them into the viewport</li>
+                            <li>Further develop CSS styling</li>
+                        </ul>
+                        <p>Next steps:</p>
+                        <ul class="portfolio-list">
+                            <li>Ensure consistent styling on all browsers</li>
+                            <li>Continue to add projects from my own learning</li>
+                            <li>Become a Founder & Coders software developer apprentice!</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
