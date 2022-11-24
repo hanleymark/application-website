@@ -242,7 +242,7 @@ figcaption {
     border-width: 2px;
     border: 2px 2px 0 2px;
     opacity: 60%;
-    /* transition: all 0.2s; */
+    transition: all 0.2s;
 }
 
 .portfolio-image:hover {
