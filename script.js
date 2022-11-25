@@ -61,7 +61,9 @@ function setUpTypingAnimation(elements) {
 
 // Toggle show/hide extra information on portfolio windows
 function toggleText(name, button) {
+    // Get reference to hidden text element using argument supplied in button onclick handler
     const content = document.querySelector(`#${name}-hidden`);
+    // Toggle show/hide text and change text on show/hide button
     if (content.style.display == "none") {
         content.style.display = "block";
         button.innerHTML = "Less";
