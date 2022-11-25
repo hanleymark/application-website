@@ -235,6 +235,28 @@ figcaption {
     text-align: left;
 }
 
+.portfolio-image-container {
+    position: relative;
+    background-color: #24669c;
+}
+
+.portfolio-image-overlay {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-weight: 600;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
 .portfolio-image {
     display: block;
     width: 100%;
@@ -242,12 +264,16 @@ figcaption {
     border-style: solid;
     border-width: 2px;
     border: 2px 2px 0 2px;
-    opacity: 60%;
+    opacity: 100%;
     transition: all 0.2s;
 }
 
-.portfolio-image:hover {
+.portfolio-image:hover{
     cursor: pointer;
+    opacity: 30%;
+}
+
+.portfolio-image:hover + .portfolio-image-overlay {
     opacity: 100%;
 }
 
@@ -358,4 +384,3 @@ figcaption {
     background-color: #bbb;
     border-radius: 0 0 6px 6px;
 }
-
