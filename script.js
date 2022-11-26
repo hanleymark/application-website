@@ -63,13 +63,16 @@ function setUpTypingAnimation(elements) {
 function toggleText(name, button) {
     // Get reference to hidden text element using argument supplied in button onclick handler
     const content = document.querySelector(`#${name}-hidden`);
+    const ellipsis = document.querySelector(`#${name}-ellipsis`);
     // Toggle show/hide text and change text on show/hide button
     if (content.style.display == "none") {
         content.style.display = "block";
+        ellipsis.style.display = "none";
         button.innerHTML = "Less";
     }
     else {
         content.style.display = "none";
+        ellipsis.style.display = "inline";
         button.innerHTML = "More";
     }
 }
