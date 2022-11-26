@@ -12,6 +12,8 @@ Using anchors for navigation
 Fixed navigation links at the top of the page
 Play CSS animations when the user scrolls them into the viewport
 Further develop CSS styling
+
+
 Next steps:
 
 Structure CSS mmuch ore effectively
