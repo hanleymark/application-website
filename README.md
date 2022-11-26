@@ -16,7 +16,7 @@ Further develop CSS styling
 
 Next steps:
 
-Structure CSS mmuch ore effectively
+Structure CSS much ore effectively
 Ensure consistent styling on all browsers
 Continue to add projects from my own learning
 Become a Founder & Coders software developer apprentice!
