@@ -10,6 +10,7 @@ The last project! I wanted to develop a pleasing style and layout which showed m
 
 Key learning:
 
+Use ARIA attributes where links not clear for screen readers
 Using anchors for navigation
 Fixed navigation links at the top of the page
 Play CSS animations when the user scrolls them into the viewport
